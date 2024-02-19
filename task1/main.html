@@ -1,1 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tholeti Kusuma Sri - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ddd;
+            padding: 1em 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, textarea {
+            margin-bottom: 16px;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        #home {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('your_photo.jpg') center/cover no-repeat;
+            color: white;
+        }
+
+        #skills {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-left: 340px;
+            text-align: center;
+        }
+
+        #skills h3 {
+            color: #555;
+        }
+
+        #projects .project-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #projects .project-card h3 {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    #projects .project-card p {
+        margin-bottom: 15px;
+    }
+
+    #projects .project-card .links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #projects .project-card a {
+        text-decoration: none;
+        color: #333;
+        background-color: #ddd;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        width: 100px; /* Adjust the width as needed */
+        text-align: center;
+    }
+
+    #projects .project-card a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    #projects .project-card img {
+        width: 50px; /* Adjust the size of the image as needed */
+        height: 50px; /* Adjust the size of the image as needed */
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <h2>Hi 👋, This is Kusuma Sri Tholeti</h2>
+        <img  style=border-radius:50% src="photo.jpg" alt="Your Photo" width="150" height="150">
+   
+    </section>
+
+    <section id="about">
+        <p>I am a Computer Science student at Anil Neerukonda Institute of Technology and Sciences. I am a tech enthusiast, and I bring a creative touch to problem-solving, reflected in my hobby of sketching.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+            <h3>Programming Skills</h3>
+            <p>C, C++ (Basics), Python, Java (Basics)</p>
+        </div>
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML, CSS, JavaScript, PHP</p>
+        </div>
+        <div class="card">
+            <h3>CS Core</h3>
+            <p>MySQL, Data Structures, OOPs, Operating System</p>
+        </div>
+        <div class="card">
+            <h3>OS</h3>
+            <p>Windows, Linux</p>
+        </div>
+    </section>
+
+  
+<section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-card">
+        <img src="project1_image.jpg" alt="Project 1 Image">
+        <h3>Web Development Mini-project: Guessing-Game</h3>
+        <p>A static website built using HTML, CSS, and JavaScript. </p>
+        <div class="links">
+            <a href="https://github.com/your_username/your_project_repo" target="_blank">Source Code</a>
+            <a href="https://example.com" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="project2_image.jpg" alt="Project 2 Image">
+        <h3>A Mini-Replicate for Facebook</h3>
+        <p>Built using HTML, CSS, JS, PHP. </p>
+        <div class="links">
+            <a href="https://github.com/your_username/your_project_repo" target="_blank">Source Code</a>
+            <a href="https://example.com" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="project3_image.jpg" alt="Project 3 Image">
+        <h3>X’s and O’s game (PYTHON)</h3>
+        <p>Rock-Tic-Tac-Toe game built in Python.</p>
+        <div class="links">
+            <a href="https://github.com/your_username/your_project_repo" target="_blank">Source Code</a>
+            <a href="https://example.com" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me: 
+            <a href="https://www.linkedin.com/in/tholeti-kusuma-sri-b9bba6250" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/tholetikusumasri" target="_blank">GitHub</a> | 
+            Email: t.kusumasri817@gmail.com
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling (you can replace this with your backend logic)
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Form submitted! (Note: This is a demo, no actual form submission.)");
+        });
+    </script>
+</body>
+</html>
